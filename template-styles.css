@@ -319,19 +319,25 @@ body {
     -o-transition: all 0.32s ease-in-out;
     transition: all 0.32s ease-in-out;
 }
+
+.n-header__menu * {
+    box-sizing: border-box;
+}
+
 .n-header__menu ul {
     position: relative;
-    padding-top: 70px;
+    padding: 70px 40px 0;
+    border: none;
 }
 .n-header__menu ul li {
-    font-size: 30px;
-    padding: 22px 0px 22px 50px;
+    font-size: 26px;
+    padding: 22px 0px 22px 75px;
     color: #fff;
     background: #2d2d2d;
     border-bottom: 1px solid #4f4f4f;
-    border-left: 1px solid #000;
+    /*border-left: 1px solid #000;*/
     position: relative;
-    right: 0px;
+    right: 0;
     -webkit-transition: all 0.32s ease-in-out;
     -moz-transition: all 0.32s ease-in-out;
     -ms-transition: all 0.32s ease-in-out;
@@ -340,6 +346,7 @@ body {
     display: table;
     width: 100%;
 }
+
 .n-header__menu ul li a {
     display: block;
     width: 100%;
@@ -361,7 +368,31 @@ body {
 .n-header__menu ul li img {
     display: table-cell;
     vertical-align: middle;
+    width: 40px;
 }
+
+.n-header__menu-close {
+    width: 105px;
+    height: 105px;
+    background-color: #bebebe;
+    margin: 70px auto 0;
+    position: relative;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.n-header__menu-close::after {
+    content: '';
+    width: 17px;
+    height: 27px;
+    position: absolute;
+    top: 50%;
+    left: 47%;
+    background: url(img/arr2.png) no-repeat 0 0;
+    transform: translate(-50%,-50%);
+}
+
+
 .n-header__menu ul li:hover {
     background: #474747;
 }
@@ -432,13 +463,13 @@ body {
     margin: 0px 55px;
     position: relative;
 }
-.n-main__auth__field--log:before {
+.n-main__auth__field--log::before {
     content: '';
     display: block;
     clear: both;
     width: 34px;
     height: 35px;
-    background: url("img/e1.png");
+    background: url("img/icon-search.png");
     position: absolute;
     left: 15px;
     bottom: 27px;
@@ -3297,4 +3328,24 @@ new style ---------------------------------------------------
 
 .n-header__notice-count {
     background-color: #de4965;
+}
+
+
+/*блок сканирование на странице поиска*/
+
+.n-main__scan {
+    margin-top: 70px;
+    text-align: center;
+    font-family: 'afuturaround-regular-webfont', Tahoma, sans-serif;
+}
+
+.n-main__scan a {
+    display: inline-block;
+}
+
+.n-main__scan-text {
+    font-size: 18px;
+    line-height: 1.2;
+    color: #777777;
+    text-transform: uppercase;
 }
