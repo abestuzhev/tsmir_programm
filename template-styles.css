@@ -3567,13 +3567,49 @@ new style ---------------------------------------------------
     background-color: #be39f5;
 }
 
+.n-main-additional {
+    font-family: 'afuturaround-regular-webfont', Tahoma, sans-serif;
+    color: #424242;
+}
+
+.n-main-additional__header {
+    margin: 35px 0 30px;
+
+}
+
+.n-main-additional__title {
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+.n-main-additional__goods {
+    font-size: 22px;
+}
 
 
+.n-main-additional__list {
 
+}
 
+.n-main-additional__item {
 
+}
 
+.additional-card {
+    padding: 34px 31px;
+    background-color: #fff;
+    box-shadow: 0 3px 10px 0 rgba(0,0,0,.1);
+    margin-bottom: 30px;
+}
 
+.additional-card__icon {
+
+}
+
+.additional-card__title {
+}
 
 
 
