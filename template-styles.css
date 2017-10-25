@@ -543,15 +543,25 @@ body {
 .n-main__auth__forg a:hover {
     text-decoration: underline;
 }
+
+.n-main__search-page {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 .n-main__search .n-main__auth__field {
     border-bottom: 1px solid #3b3b3b;
-    margin-top: 280px;
+    /*margin-top: 280px;*/
 }
 .n-main__search .n-main__auth__field:before {
     width: 31px;
     height: 34px;
-    background: url("img/loop2.png");
+    background: url("img/icon-search.png") no-repeat 50% 50%;
 }
+
 .n-main__search .n-main__auth__field input {
     color: #3b3b3b;
 }
@@ -3598,20 +3608,146 @@ new style ---------------------------------------------------
 }
 
 .additional-card {
+    display: block;
     padding: 34px 31px;
     background-color: #fff;
     box-shadow: 0 3px 10px 0 rgba(0,0,0,.1);
     margin-bottom: 30px;
+    font-size: 0;
+    font-family: 'afuturaround-regular-webfont', Tahoma, sans-serif;
 }
 
 .additional-card__icon {
+    display: inline-block;
+    width: 33px;
+    margin-right: 28px;
+    vertical-align: middle;
+}
 
+.additional-card__icon svg {
+    fill: #e3e3e3;
 }
 
 .additional-card__title {
+    display: inline-block;
+    font-size: 17px;
+    color: #444444;
+    vertical-align: middle;
 }
 
+.additional-card-add {
+    font-family: 'afuturaround-regular-webfont', Tahoma, sans-serif;
+    display: inline-block;
+    padding: 17px 18px 17px 42px;
+    border: 1px solid #e3e3e3;
+    border-radius: 0 50px 50px 0;
+    position: relative;
+    transition: all .2s ease-out;
+    margin: 10px 50px 30px;
+}
 
+.additional-card-add:hover {
+    border-color: #00bd75;
+    color: #00bd75;
+    transition: all .2s ease-out;
+}
 
+.additional-card-add:hover .additional-card-add__icon {
+    background-color: #00bd75;
+    transition: all .2s ease-out;
+}
+.additional-card-add__icon {
+    position: absolute;
+    left: -26px;
+    top: -1px;
+    width: 56px;
+    height: 56px;
+    border-radius: 56px;
+    background-color: #e3e3e3;
+    transition: all .2s ease-out;
+}
 
+.additional-card-add__icon .icon-plus {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 16px;
+    height: 16px;
+    fill: #fff;
+}
 
+.additional-card-add__title {
+    font-size: 17px;
+}
+
+/*кастомные кнопки*/
+
+.n-main-layout__btn {
+    padding: 35px 0;
+    font-size: 0;
+    text-align: center;
+}
+
+.additional-btn {
+    display: inline-block;
+    padding: 20px 43px;
+    background-color: #00bd75;
+    text-align: center;
+    border-radius: 50px;
+    margin: 0 16px;
+    color: #fff;
+    font-size: 20px;
+    transition: all .2s ease-out;
+}
+
+.additional-btn:hover {
+    background-color: #00a05d;
+    transition: all .2s ease-out;
+}
+
+.additional-btn span {
+    display: block;
+    font-size: 24px;
+}
+
+.search-btn--small {
+    display: inline-block;
+    border-radius: 100px;
+    background-color: #00bd75;
+    transition: all .2s ease-out;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    transition: all .2s ease-out;
+}
+
+.search-btn--small:hover {
+    transition: all .2s ease-out;
+    background-color: #00a05d;
+}
+
+.search-btn--small svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    fill: #fff;
+}
+
+/*svg иконки*/
+.icon-shopping-cart {
+    width: 33px;
+    height: 33px;
+}
+
+.icon-plus {
+    width: 16px;
+    height: 16px;
+}
+
+.icon-search {
+    width: 29px;
+    height: 29px;
+    fill: #3b3b3b;
+}
