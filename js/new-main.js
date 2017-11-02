@@ -65,4 +65,10 @@
         nav: 'thumbs'
     });
 
+    $("#filter-price__on-search-result").ionRangeSlider({
+        min: 0,
+        max: 90000,
+        from: 50000
+    });
+
 });
