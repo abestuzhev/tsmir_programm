@@ -71,4 +71,10 @@
         from: 50000
     });
 
+    // Инициализация
+    $('#datepicker').datepicker({
+      range: true
+    })
+
+
 });

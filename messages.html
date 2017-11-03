@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="./js/vendor/ionrangeslider/ion.rangeSlider.css" >
     <link rel="stylesheet" href="./js/vendor/ionrangeslider/ion.rangeSlider.skinHTML5.css" >
     <link rel="stylesheet" href="./js/vendor/swiper/swiper.min.css" >
-    <link rel="stylesheet" href="./js/vendor/jquery-ui-1.11.4.custom/jquery-ui.min.css" >
+    <!-- <link rel="stylesheet" href="./js/vendor/jquery-ui-1.11.4.custom/jquery-ui.min.css" > -->
 
     <link rel="stylesheet" href="template-styles.css" >
     <link rel="stylesheet" href="extra.css" >
@@ -29,17 +29,24 @@
 
     <!--[if lt IE 10]><script src="./js/vendor/IE9.js"></script><![endif]-->
 
+
+
     <script src="./js/vendor/jquery.min.js" type="text/javascript"></script>
+
     <script src="./js/vendor/jquery-placeholder/jquery.placeholder.min.js" type="text/javascript"></script>
     <script src="./js/vendor/fastclick.js'" type="text/javascript"></script>
     <script src="./js/vendor/ionrangeslider/ion.rangeSlider.min.js" type="text/javascript"></script>
     <script src="./js/vendor/chart/jqBarGraph.1.1.js" type="text/javascript"></script>
     <script src="./js/vendor/swiper/swiper.jquery.min.js" type="text/javascript"></script>
     <script src="./js/vendor/rotate/rotate.js" type="text/javascript"></script>
-    <script src="./js/vendor/jquery-ui-1.11.4.custom/jquery-ui.min.js" type="text/javascript"></script>
+    <!-- <script src="./js/vendor/jquery-ui-1.11.4.custom/jquery-ui.min.js" type="text/javascript"></script> -->
     <script src="./js/vendor/jquery-elastic-1.6.10/jquery.elastic.source.js" type="text/javascript"></script>
     <script src="./js/vendor/magnific-popup/jquery.magnific-popup.min.js" type="text/javascript"></script>
     <script src="./js/scripts.js" type="text/javascript"></script>
+
+    <!-- date piker -->
+    <link href="./js/vendor/air-datepicker/datepicker.css" rel="stylesheet" type="text/css">
+    <script src="./js/vendor/air-datepicker/datepicker.js"></script>
 
 </head>
 
@@ -127,6 +134,26 @@
 
         <div class="n-container n-container--mod">
             <div class="n-main-notice">
+
+                <!--START date piker -->
+                <div class="n-main-notice__date">
+                  <div class="n-main-notice__date-col">
+                    <a class="n-main-notice__date-all-time" href="#">За все время</a>
+                    <input id="datepicker" type="text" data-range="true" data-multiple-dates-separator=" - " class="datepicker-here">
+                    <!-- <input id="datepicker" type="text" class="datepicker-here" data-multiple-dates="5" data-multiple-dates-separator=", " data-position='right top'/> -->
+                    <!-- <input type='text' class="datepicker-here" data-position="right top" /> -->
+                  </div>
+                  <div class="n-main-notice__date-col">
+                    <select class="n-main-notice__filter-message" name="filter-message" id="filter-message">
+                      <option value="От всех">От всех</option>
+                      <option value="От директора">От директора</option>
+                      <option value="От коммерческого директора">От коммерческого директора</option>
+                      <option value="От менеджера">От менеджера</option>
+                    </select>
+                  </div>
+                </div>
+                <!--END date piker -->
+
                 <ul class="n-main-notice__list">
                     <li class="n-main-notice__item">
                         <div class="n-main-notice-card no-read no-read--message">

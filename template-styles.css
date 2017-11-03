@@ -3758,6 +3758,102 @@ new style ---------------------------------------------------
     padding: 25px 0;
 }
 
+.n-main-notice__date {
+  margin-top: 16px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.n-main-notice__date-all-time {
+  border-radius: 50px;
+  padding: 13px 36px;
+  text-align: center;
+  font-size: 16px;
+  color: #fefefe;
+  background-color: #9b65b1;
+}
+
+.n-main-notice__filter-message {
+  border-radius: 50px;
+  padding: 13px 36px;
+  font-size: 16px;
+  border: 1px solid #e3e3e3;
+}
+
+.n-main-notice__filter-message:focus {
+  outline: none;
+}
+
+.datepicker {
+  width: 600px !important;
+}
+
+.datepicker--cell {
+  height: 80px !important;
+  /*border-radius: 80px !important;*/
+}
+
+.datepicker--nav {
+  margin-bottom: 40px !important;
+  padding: 20px 0 !important;
+}
+
+/*.datepicker--cell.-in-range- {
+  border-radius: 0 !important;
+}*/
+
+.datepicker--nav-title {
+  font-size: 30px;
+  padding: 10px 8px !important;
+}
+
+/*.datepicker--nav-action svg,*/
+.datepicker--nav-action {
+    width: 46px !important;
+    height: 46px !important;
+}
+
+.datepicker--day-name {
+  font-size: 18px !important;
+  color: #333333 !important;
+}
+
+
+.datepicker--cell.-selected- {
+  background-color: #9b65b1 !important;
+}
+/*
+.datepickers-container {
+  position: fixed !important;
+  top: 0;
+  left: -15% !important;
+}*/
+
+.datepicker {
+  position: fixed !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%,-50%) !important;
+}
+
+.datepicker--pointer {
+  display: none;
+}
+
+.datepicker--cell.-in-range- {
+  background-color: rgba(155, 101, 177, 0.26) !important;
+  /*color: #fff !important;*/
+}
+
+.n-main-notice__date input {
+  border: 1px solid #e8e8e8;
+  border-radius: 50px;
+  padding: 13px 26px;
+  text-align: center;
+}
+
 .n-main-notice__item {
     margin-bottom: 20px;
 }
@@ -3829,7 +3925,7 @@ new style ---------------------------------------------------
 }
 
 .no-read--message {
-    background-color: #be39f5;
+    background-color: #9b65b1;
 }
 
 
