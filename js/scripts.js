@@ -31,13 +31,13 @@ $(document).ready(function() {
     document.body.onclick = function(e) {
         e = e || window.event;
         var target = e.target || e.srcElement;
-        
+
         if (target.className.split(' ')[0] != 'n-header__butter__link') {
 	        if ( (" " + target.parentNode.parentNode.className + " ").replace(/[\n\t]/g, " ").indexOf(" n-header__menu__list ") < 0 ) {
 	            $('.n-header__menu').find('.n-header__menu__container').animate({'right':'-100%'},'fast',function(){
 	    			$('.n-header__menu').css('visibility','hidden');
 	    			$('.page').css('height','auto');
-	    			$('.n-header__butter').removeClass('butter-active');   			
+	    			$('.n-header__butter').removeClass('butter-active');
 	    		});
 	        }
         }

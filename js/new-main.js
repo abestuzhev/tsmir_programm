@@ -74,7 +74,61 @@
     // Инициализация
     $('#datepicker').datepicker({
       range: true
-    })
+    });
+
+    /*клонирование карточек*/
+    $('.additional-card-add').on('click', function(e){
+        e.preventDefault();
+        $('.js-clone').clone().removeClass('js-clone').appendTo('.n-main-additional__list');
+    });
+
+    /*выбор гарантии*/
+    function choiceOfGuarantee (elem, activeClass){
+        $(elem).on('click',function(e){
+            e.preventDefault();
+            console.log('click');
+            var $this = $(this);
+            $this.removeClass('guarantee-default guarantee-red guarantee-yellow guarantee-green');
+            $this.siblings().removeClass('guarantee-default guarantee-red guarantee-yellow guarantee-green');
+            $this.prevUntil().addClass(activeClass);
+            $this.addClass(activeClass);
+            $this.siblings().find('.guarantee-card-status__point-text').removeClass('active');
+            $this.find('.guarantee-card-status__point-text').addClass('active');
+
+            /*красим заголовок*/
+            $this.parents().siblings('.guarantee-card__price').removeClass('guarantee-default guarantee-red guarantee-yellow guarantee-green');
+            $this.parents().siblings('.guarantee-card__price').addClass(activeClass);
+        });
+    }
+
+    choiceOfGuarantee('.js-guarantee-no','guarantee-default');
+    choiceOfGuarantee('.js-guarantee-one','guarantee-red');
+    choiceOfGuarantee('.js-guarantee-three','guarantee-yellow');
+    choiceOfGuarantee('.js-guarantee-forever','guarantee-green');
+
+
+    /*закрыть карточку в доп. товарах*/
+    $('.additional-card__close, .c-btn__delete').on('click', function(e){
+        e.preventDefault();
+        $(this).parents('.n-main-additional__item').hide();
+    });
+
+    $('.insurance-card__btn').on('click', function(e){
+        e.preventDefault();
+        var $text = $(this).data('title');
+        $('.insurance-card__status').text($text);
+        $('.insurance-card').addClass('active');
+        $(this).siblings().removeClass('active');
+        $(this).addClass('active');
+    });
+
+    // $('[class*=js-guarantee]').click(function(){
+    //    $(this).css('border','1px solid #000');
+    // });
+
+
+
+    // $('[class^="js-guarantee"]')
 
 
 });

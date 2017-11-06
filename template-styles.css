@@ -1509,6 +1509,113 @@ body {
     display: block;
     margin-top: 0px;
 }
+
+/*каталог в корзине v2*/
+.n-main__catalogv2 {
+
+}
+
+.n-main__catalogv2 .additional-card-add {
+    padding: 9px 18px 10px 35px;
+    margin-left: 21px;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+.n-main__catalogv2 .additional-card-add__icon {
+    width: 41px;
+    height: 41px;
+}
+
+.n-main__catalogv2 .basket-addition-card {
+    margin-left: 76px;
+}
+
+.n-main__catalogv2__item {
+    margin-bottom: 44px;
+}
+
+.basket-card {
+    border: 1px solid #cfcfcf;
+    color: #343434;
+    margin-bottom: 15px;
+}
+
+.basket-card .c-counter__btn{
+    width: 42px;
+    height: 42px;
+}
+.basket-card .c-counter__field {
+    font-family: 'afuturaround-regular-webfont-webfont', Tahoma, sans-serif;
+}
+
+.basket-card .c-btn__delete {
+    position: absolute;
+    width: 69px;
+    height: 69px;
+    right: -34px;
+    top: -1px;
+}
+
+.basket-card {
+    padding-right: 50px;
+    font-size: 0;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.basket-card__left {
+    width: 50%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+
+}
+.basket-card__right {
+    width: 50%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+}
+
+.basket-card__item {
+    display: inline-block;
+}
+
+/*.basket-card__item:nth-child(1){*/
+    /*width: 66px;*/
+/*}*/
+/*.basket-card__item:nth-child(2){*/
+    /*width: 60%;*/
+/*}*/
+
+/*.basket-card__item:nth-child(3){*/
+    /*width: 165px;*/
+/*}*/
+/*.basket-card__item:nth-child(4){*/
+    /*width: 7rem;*/
+/*}*/
+
+/*.basket-addition-card .basket-card__item:nth-child(2) {*/
+    /*width: 59%;*/
+/*}*/
+
+.basket-card__name {
+    font-size: 16px;
+}
+
+.basket-card__price {
+    font-size: 22px;
+    width: 100px;
+    margin-left: 25px;
+}
+
 .n-main__bk {
     background: url("img/bk1.png");
     background-size: cover;
@@ -1707,11 +1814,10 @@ body {
     width: 110px !important;
 }
 .n-main__bucket__bottom {
-    margin: 0px auto;
-    width: 260px;
+    padding-top: 62px;
+    width: 100%;
     text-align: center;
     color: #323232;
-    margin-top: 62px;
 }
 .n-main__bucket__bottom span {
     font-size: 24px;
@@ -3956,6 +4062,8 @@ new style ---------------------------------------------------
 .n-main-additional {
     font-family: 'afuturaround-regular-webfont', Tahoma, sans-serif;
     color: #424242;
+    /*position: relative;*/
+    /*z-index: 11;*/
 }
 
 .n-main-additional__header {
@@ -3975,6 +4083,7 @@ new style ---------------------------------------------------
 }
 
 
+
 .n-main-additional__list {
 
 }
@@ -3991,6 +4100,48 @@ new style ---------------------------------------------------
     margin-bottom: 30px;
     font-size: 0;
     font-family: 'afuturaround-regular-webfont', Tahoma, sans-serif;
+}
+
+.additional-card__close {
+    z-index: 99;
+    cursor: pointer;
+    position: absolute;
+    width: 38px;
+    height: 38px;
+    top: 19px;
+    right: 19px;
+    border: 1px solid #e5e5e5;
+    border-radius: 50%;
+}
+
+.additional-card__close::before {
+    content: '';
+    width: 22px;
+    height: 1px;
+    position: absolute;
+    top: 50%;
+    left: 9px;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    background-color: #e5e5e5;
+}
+
+.additional-card__close::after {
+    content: '';
+    width: 22px;
+    height: 1px;
+    position: absolute;
+    top: 50%;
+    left: 9px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    background-color: #e5e5e5;
 }
 
 .additional-card__icon {
@@ -4056,6 +4207,313 @@ new style ---------------------------------------------------
 .additional-card-add__title {
     font-size: 17px;
 }
+
+/*карточка гарантии*/
+.guarantee-card {
+    position: relative;
+    display: block;
+    padding: 34px 31px;
+    background-color: #fff;
+    box-shadow: 0 3px 10px 0 rgba(0,0,0,.1);
+    margin-bottom: 30px;
+    font-size: 0;
+    font-family: 'afuturaround-regular-webfont', Tahoma, sans-serif;
+}
+
+.guarantee-card__price {
+    font-size: 18px;
+    color:#fbb952;
+    margin-bottom: 45px;
+    position: relative;
+    padding-left: 40px;
+    font-family: 'afuturaround-bold-webfont', Tahoma, sans-serif;
+
+}
+
+.guarantee-card__price::after {
+    position: absolute;
+    content: '';
+    top: -10px;
+    left: 0;
+    width: 31px;
+    height: 49px;
+    background: url(img/icon-label-guarantee.png) 0 0 no-repeat;
+}
+
+.guarantee-card__price.guarantee-red {
+    color: #e83f4f;
+}
+.guarantee-card__price.guarantee-red::after {
+    content: '';
+    background-position: -30px 0;
+}
+
+.guarantee-card__price.guarantee-green {
+    color: #00bd75;
+}
+.guarantee-card__price.guarantee-green::after {
+    content: '';
+    background-position: -61px 0;
+}
+
+.guarantee-card-status {
+    position: relative;
+
+}
+.guarantee-card-status__line {
+    background-color: #e2e2e2;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 50%;
+    height: 5px;
+    width: 100%;
+    border-radius: 5px;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+
+}
+.guarantee-card-status__box {
+    font-size: 0;
+}
+.guarantee-card-status__point-text {
+    color: #bbbbbb;
+    font-size: 13px;
+    position: absolute;
+    top: -18px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    white-space: nowrap;
+}
+.guarantee-card-status__point {
+    position: relative;
+    z-index: 2;
+    display: inline-block;
+    vertical-align: top;
+    text-align: right;
+    cursor: pointer;
+}
+.guarantee-card-status__point-circle {
+    position: relative;
+    display: inline-block;
+    width: 38px;
+    height: 38px;
+    border-radius: 50px;
+    background-color: #e2e2e2;
+}
+.guarantee-card-status__point-line {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    height: 5px;
+    width: 100%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.js-guarantee-no {
+    width: 89px;
+}
+
+.js-guarantee-one {
+    width: 170px;
+}
+
+.js-guarantee-three {
+    width: 187px;
+}
+
+.js-guarantee-forever {
+    width: 260px;
+}
+.js-guarantee-forever .guarantee-card-status__point-circle {
+    right: 55px;
+}
+
+.div {
+    width: 50px;
+    height: 50px;
+    background-color: #000;
+}
+
+
+.guarantee-default .guarantee-card-status__point-circle,
+.guarantee-default .guarantee-card-status__point-line {
+    background-color: #6e6e6e;
+}
+
+.guarantee-default .guarantee-card-status__point-text.active {
+    font-family: 'afuturaround-bold-webfont', Tahoma, sans-serif;
+    color: #6e6e6e;
+}
+
+.guarantee-red .guarantee-card-status__point-circle,
+.guarantee-red .guarantee-card-status__point-line {
+    background-color: #e83f4f;
+}
+
+.guarantee-red .guarantee-card-status__point-text.active {
+    font-family: 'afuturaround-bold-webfont', Tahoma, sans-serif;
+    color: #e83f4f;
+}
+
+.guarantee-yellow .guarantee-card-status__point-circle,
+.guarantee-yellow .guarantee-card-status__point-line {
+    background-color: #fbb952;
+}
+.guarantee-yellow .guarantee-card-status__point-text.active {
+    font-family: 'afuturaround-bold-webfont', Tahoma, sans-serif;
+    color: #fbb952;
+}
+
+.guarantee-green .guarantee-card-status__point-circle,
+.guarantee-green .guarantee-card-status__point-line {
+    background-color: #00bd75;
+}
+.guarantee-green .guarantee-card-status__point-text.active {
+    color: #00bd75;
+    font-family: 'afuturaround-bold-webfont', Tahoma, sans-serif;
+}
+
+/*карточка страхования*/
+.insurance-card {
+    position: relative;
+    display: block;
+    padding: 34px 31px;
+    background-color: #fff;
+    box-shadow: 0 3px 10px 0 rgba(0,0,0,.1);
+    margin-bottom: 30px;
+    font-size: 0;
+    font-family: 'afuturaround-regular-webfont', Tahoma, sans-serif;
+}
+
+.insurance-card.active {
+    background-color: #00bd75;
+}
+
+.insurance-card.active .insurance-card__status::after {
+    content: '';
+    background: url(img/icon-insurance.png) 0 -30px no-repeat;
+}
+
+.insurance-card.active .insurance-card__status {
+    color: #fff;
+}
+
+.insurance-card.active .insurance-card__btn {
+    background-color: #e2e2e2;
+}
+.insurance-card.active .insurance-card__btn.active {
+    background-color: #00bd75;
+}
+
+.insurance-card__status {
+    color: #9f9f9f;
+    font-size: 18px;
+    position: relative;
+    padding-left: 40px;
+    margin-bottom: 30px;
+    font-family: 'afuturaround-bold-webfont', Tahoma, sans-serif;
+}
+
+.insurance-card__status::after {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    background: url(img/icon-insurance.png) 0 0 no-repeat;
+}
+
+.insurance-card__box {
+    font-size: 0;
+    text-align: justify;
+}
+
+.insurance-card__box::after {
+    content: '';
+    display: inline-block;
+    width: 100%;
+}
+
+.insurance-card__btn {
+    box-sizing: border-box;
+    width: 48%;
+    display: inline-block;
+    vertical-align: top;
+    border-radius: 50px;
+    background-color: #00bd75;
+    padding: 14px 35px 14px 80px;
+    color: #fff;
+    font-size: 18px;
+    text-align: left;
+    line-height: .95;
+    position: relative;
+}
+
+.insurance-mobile::before {
+    content: '';
+    position: absolute;
+    left: 27px;
+    top: 10px;
+    width: 37px;
+    height: 37px;
+    background: url(img/smartphone.svg) 0 0 no-repeat;
+}
+
+.insurance-mechanical::before {
+    content: '';
+    position: absolute;
+    left: 38px;
+    top: 16px;
+    width: 29px;
+    height: 27px;
+    background: url(img/washing-machine.svg) 0 0 no-repeat;
+}
+
+/*карточка дополнительного продукта*/
+.additional-product {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px;
+    background-color: #fff;
+    box-shadow: 0 3px 10px 0 rgba(0,0,0,.1);
+    margin-bottom: 30px;
+    color: #282828;
+    font-size: 18px;
+    font-family: 'afuturaround-regular-webfont', Tahoma, sans-serif;
+}
+
+.additional-product__item:nth-child(2) {
+    width: 50%;
+}
+.additional-product__item:nth-child(1) {
+    width: 12%;
+}
+
+.additional-product__name {
+    /*margin-bottom: 6px;*/
+}
+
+.additional-product__price span {
+    color: #00bd75;
+    font-size: 24px;
+    font-family: 'afuturaround-bold-webfont', Tahoma, sans-serif;
+}
+
 
 /*кастомные кнопки*/
 
@@ -4292,7 +4750,28 @@ new style ---------------------------------------------------
     transform: rotate(180deg);
 }
 
-
+.c-btn__delete {
+    display: block;
+    position: relative;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background-color: #e3e3e3;
+}
+.c-btn__delete::after {
+    position: absolute;
+    content: '';
+    width: 21px;
+    height: 27px;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    background: url(img/icon-delete.png) 0 0 no-repeat;
+}
 
 
 /*счетчик количества в карточке товара*/
