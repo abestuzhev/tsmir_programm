@@ -122,13 +122,16 @@
         $(this).addClass('active');
     });
 
-    // $('[class*=js-guarantee]').click(function(){
-    //    $(this).css('border','1px solid #000');
-    // });
+    $('.n-main-notice-card').on('click', function(e){
+        e.preventDefault();
+        console.log('клик прошел');
+        $(this).removeClass('no-read no-read--message');
+    });
 
 
 
-    // $('[class^="js-guarantee"]')
+
+
 
 
 });

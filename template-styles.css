@@ -3213,6 +3213,7 @@ body {
 }
 
 .search-result-card {
+  display: block;
     font-family: 'afuturaround-regular-webfont', Tahoma, sans-serif;
     border: solid 1px #00b6f1;
     border-radius: 15px;
@@ -3892,6 +3893,34 @@ new style ---------------------------------------------------
   outline: none;
 }
 
+.select-layout {
+  position: relative;
+  display: block;
+}
+.select-layout::after {
+  /*content: "▼";*/
+  content: "◣";
+  transform: rotate(-45deg);
+  padding: 0 8px;
+  font-size: 22px;
+  color: #bebebe;
+  position: absolute;
+  right: 8px;
+  top: 5px;
+  z-index: 1;
+  text-align: center;
+  width: 10%;
+  height: 100%;
+  pointer-events: none;
+  box-sizing: border-box;
+}
+.n-main-notice__filter-message {
+  padding-right: 45px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
 .datepicker {
   width: 600px !important;
 }
@@ -3970,6 +3999,10 @@ new style ---------------------------------------------------
     font-family: 'afuturaround-regular-webfont', Tahoma, sans-serif;
     border: 1px solid #eaeaea;
     position: relative;
+}
+
+.n-main-notice-card a {
+    display: block;
 }
 
 .n-main-notice-card__icon {
