@@ -66,9 +66,16 @@
     });
 
     $("#filter-price__on-search-result").ionRangeSlider({
+        // min: 0,
+        // max: 90000,
+        // from: 50000
+
+        type: "double",
         min: 0,
         max: 90000,
-        from: 50000
+        from: 42500,
+        to: 57500,
+        keyboard: true // true by default
     });
 
     // Инициализация
