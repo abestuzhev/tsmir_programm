@@ -1,6 +1,5 @@
-;$(function(){
+$(function(){
     /*количество товара в карточке*/
-
     function catalogItemCounter(field) {
         var fieldCount = function (el) {
             var
