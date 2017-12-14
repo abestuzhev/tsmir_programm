@@ -299,7 +299,7 @@ body {
     transition: all 0.32s ease-in-out;
 }
 .n-header__menu {
-    /*position: absolute;*/
+    position: absolute;
     width: 100%;
     height: 100%;
     right: 0px;
@@ -3825,6 +3825,11 @@ new style ---------------------------------------------------
     background-size: cover;
 }
 
+.n-main__bk--salary {
+    background: url(img/bk2.png);
+    background-size: cover;
+}
+
 .n-main__bk--message {
     background: url(img/bk8.jpg);
     background-size: cover;
@@ -5081,3 +5086,445 @@ new style ---------------------------------------------------
     background-color: #2d2d2d;
     height: 35px;
 }
+
+
+
+
+/*моя зарплата--------------------------------*/
+.n-main-salary {
+
+}
+
+.n-main-salary__img {
+    padding: 30px 0;
+    text-align: center;
+}
+
+.n-main-salary-info {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 110px;
+}
+
+.n-main-salary-info__item {
+    width: 11%;
+    padding-left: 41px;
+    position: relative;
+}
+
+.n-main-salary-info--blue .n-main-salary-info__data {
+    color:#3778a1;
+}
+.n-main-salary-info--darkred .n-main-salary-info__data {
+    color:#aa4768;
+}
+.n-main-salary-info--red .n-main-salary-info__data {
+    color:#e73268;
+}
+.n-main-salary-info--darkgreen .n-main-salary-info__data {
+    color:#3dabaf;
+}
+
+.n-main-salary-info__item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 31px;
+    height: 31px;
+    border-radius: 50px;
+    background-color:#eee;
+}
+
+.n-main-salary-info--blue::before {
+    content: '';
+    background-color:#3778a1;
+}
+.n-main-salary-info--darkred::before {
+    background-color:#aa4768;
+}
+.n-main-salary-info--red::before {
+    background-color:#e73268;
+}
+.n-main-salary-info--darkgreen::before {
+    background-color:#3dabaf;
+}
+
+.n-main-salary-info__title,
+.n-main-salary-info__data {
+    font-size: 14px;
+    line-height: 1;
+}
+
+.n-main-salary-info__data {
+    font-weight: 700;
+}
+
+.n-main-salary-rating {
+
+}
+
+.n-main-salary-rating__item {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.n-main-salary-rating__position {
+
+}
+
+.n-main-salary-rating__position-title {
+    color: #ffb804;
+    font-size: 48px;
+    font-weight: 700;
+}
+.n-main-salary-rating__position-title span {
+    color: #444444;
+    font-size: 14px;
+}
+
+.n-main-salary-rating__where {
+    font-size: 24px;
+    color: #ffffff;
+    background-color: #00bd75;
+    padding: 14px 23px;
+    border-radius: 100px;
+}
+
+.n-main-salary-rating__time-btn {
+
+}
+
+.n-main-salary-rating__month {
+
+}
+
+.n-main-salary-rating__all-time {
+
+}
+
+/*табы*/
+.tab {
+    padding: 18px 11px;
+}
+.tabs-menu {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+
+.tabs-menu__item {
+    transition: all .2s ease-out;
+    color: #ffffff;
+    width: 22%;
+
+}
+
+.tabs-menu__item:nth-child(1) {
+    width: 76%;
+    padding-right: 20px;
+}
+
+.tabs-menu__item a {
+    text-align: center;
+    padding: 12px;
+    display: block;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: #e4e4e4;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.tabs-menu__item:last-child {
+    margin-right: 0;
+}
+
+.tabs-menu__item.current {
+    transition: all .2s ease-out;
+}
+
+.tabs-menu__item.current a {
+    background-color: #00bd75;
+    color: #ffffff;
+}
+
+
+.tab-content {
+    display: none;
+    padding: 24px 0;
+}
+
+.tab-content:first-child {
+    display: block;
+}
+
+
+/*рейтинг*/
+.rating-list {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 27px;
+}
+
+.rating-lis__item {
+    height: 440px;
+}
+.rating-lis__item:nth-child(1) {
+    height: 480px;
+}
+.rating-lis__item:nth-child(2) {
+    height: 470px;
+}
+
+.rating-lis__item:nth-child(3) {
+    height: 460px;
+}
+
+.rating-card {
+    padding: 14px 14px 30px;
+    width: 94px;
+    background-color: #fff;
+    color: #2d2d2d;
+    height: 100%;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.rating-card__header {
+    margin-bottom: 8px;
+}
+
+.rating-card__avatar {
+    width: 70px;
+    height: 70px;
+    border-radius: 100px;
+    margin: 0 auto 12px;
+    position: relative;
+    overflow: hidden;
+}
+
+.rating-card__avatar img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    font-weight: 700;
+}
+
+.rating-card__position {
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.rating-card__body {
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    width:320px;
+    position: absolute;
+    bottom: 163px;
+    left: -110px;
+}
+
+.rating-card__percent {
+    font-size: 36px;
+    font-weight: 700;
+    width: 142px;
+    display: inline-block;
+}
+
+.rating-card__user {
+    border-right: 1px solid #d0d0d0;
+    width: 143px;
+    display: inline-block;
+}
+
+.rating-card__user-surname,
+.rating-card__user-name {
+
+}
+
+.rating-card__user-surname {
+    border-bottom: 1px solid #d0d0d0;
+}
+
+
+.rating-lis__item:nth-child(3) .rating-card__user {
+    width: 156px;
+}
+.rating-lis__item:nth-child(2) .rating-card__user {
+    width: 167px;
+}
+
+.rating-lis__item:nth-child(1) .rating-card__user {
+    width: 177px;
+}
+
+.rating-lis__item:nth-child(3) .rating-card__position,
+.rating-lis__item:nth-child(2) .rating-card__position,
+.rating-lis__item:nth-child(1) .rating-card__position {
+   font-weight: 700;
+    font-size: 24px;
+}
+
+.rating-lis__item:nth-child(1) .rating-card__body {
+    width: 330px;
+    bottom: 168px;
+    left: -114px;
+}
+
+.rating-card.active-user {
+    background-color: #00bd75;
+}
+
+.rating-card.active-user .rating-card__position,
+.rating-card.active-user .rating-card__body {
+    color: #fff;
+}
+
+.rating-card.active-user .rating-card__user,
+.rating-card.active-user .rating-card__user-surname {
+    border-color: #fff;
+}
+
+.rating-scale {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rating-scale_item {
+    width: 16.666666%;
+    height: 1px;
+    background-color: #000;
+}
+
+.rating-scale_item:nth-child(1),
+.rating-scale_item:nth-child(2),
+.rating-scale_item:nth-child(3) {
+    height: 5px;
+    background-color: #00bd75;
+    position: relative;
+}
+
+.rating-scale_item:nth-child(1)::before {
+    content: '';
+    position: absolute;
+    top: -3px;
+    left: 0;
+    width: 4px;
+    height: 11px;
+    border-radius: 10px;
+    background-color: #00bd75;
+}
+
+.rating-scale_item:nth-child(2)::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    width: 33px;
+    height: 33px;
+    background-color: #fff;
+    border-radius: 33px;
+    margin-left: -16px;
+    margin-top: -16px;
+}
+.rating-scale_item:nth-child(2)::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    margin-left: -10px;
+    margin-top: -8px;
+    top: 0;
+    width: 20px;
+    height: 26px;
+    background: url(./img/user-salary.svg) 0 0 no-repeat;
+}
+
+.rating-scale_item:nth-child(3)::after {
+    content: '';
+    position: absolute;
+    top: -3px;
+    right: 0;
+    width: 4px;
+    height: 11px;
+    border-radius: 10px;
+    background-color: #00bd75;
+}
+
+/*controls*/
+.controls {
+    display: block;
+    padding: 14px;
+    background-color: #eee;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.controls__item {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.controls__radio {
+    display: inline-block;
+    margin: 0px 5px;
+}
+
+.controls label {
+    cursor: pointer;
+}
+
+.output-slider {
+    width: 40px;
+    display: inline-block;
+    margin: 0 15px 0 0;
+    border-radius: 4px;
+    padding: 6px 8px;
+    text-align: center;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+}
+.range-slider {
+    width: 200px;
+}
+.range-slider::-moz-range-thumb {
+    padding: 3px;
+}
+.range-slider:active::-moz-range-thumb {
+    background: orange;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

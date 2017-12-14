@@ -1,0 +1,438 @@
+
+<!doctype html>
+<html class="no-js" lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--link rel="shortcut icon" href="/application/favicon.ico" type="image/x-icon"-->
+    <title>Поиск</title>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="robots" content="index, follow" />
+    <meta name="keywords" content="интернет-магазин, заказать, купить" />
+    <meta name="description" content="Универсальный интернет-магазин" />
+
+    <!-- Reset styles -->
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/reset.css" >
+
+    <!-- Template styles -->
+    <link rel="stylesheet" href="./js/vendor/ionrangeslider/ion.rangeSlider.css" >
+    <link rel="stylesheet" href="./js/vendor/ionrangeslider/ion.rangeSlider.skinHTML5.css" >
+    <link rel="stylesheet" href="./js/vendor/swiper/swiper.min.css" >
+    <link rel="stylesheet" href="./js/vendor/jquery-ui-1.11.4.custom/jquery-ui.min.css" >
+
+    <link rel="stylesheet" href="template-styles.css" >
+    <link rel="stylesheet" href="extra.css" >
+    <link rel="stylesheet" href="./js/vendor/magnific-popup/magnific-popup.css">
+
+    <!--[if lt IE 10]><script src="./js/vendor/IE9.js"></script><![endif]-->
+
+    <script src="./js/vendor/jquery.min.js" type="text/javascript"></script>
+    <script src="./js/vendor/jquery-placeholder/jquery.placeholder.min.js" type="text/javascript"></script>
+    <!--<script src="./js/vendor/fastclick.js'" type="text/javascript"></script>-->
+    <script src="./js/vendor/ionrangeslider/ion.rangeSlider.min.js" type="text/javascript"></script>
+    <script src="./js/vendor/chart/jqBarGraph.1.1.js" type="text/javascript"></script>
+    <script src="./js/vendor/swiper/swiper.jquery.min.js" type="text/javascript"></script>
+    <script src="./js/vendor/rotate/rotate.js" type="text/javascript"></script>
+    <script src="./js/vendor/jquery-ui-1.11.4.custom/jquery-ui.min.js" type="text/javascript"></script>
+    <script src="./js/vendor/jquery-elastic-1.6.10/jquery.elastic.source.js" type="text/javascript"></script>
+    <script src="./js/vendor/magnific-popup/jquery.magnific-popup.min.js" type="text/javascript"></script>
+    <script src="./js/scripts.js" type="text/javascript"></script>
+    <script src="js/salary-img.js" type="text/javascript"></script>
+    <script src="./js/new-main.js" type="text/javascript"></script>
+
+</head>
+
+<body>
+<div class="page">
+    <div class="n-header">
+        <div class="n-header__user">
+
+            <div class="n-header__user__pic">
+                <!--<img src="./img/no-photo-min.png" />-->
+                <img src="./img/pic4.png" />
+            </div>
+            <div class="n-header__user__name">Кулебякин Дмитрий</div>
+
+        </div>
+        <div class="n-header__butter">
+            <div class="line"></div>
+            <a  class="n-header__butter__link"></a>
+        </div>
+        <div class="n-header__search">
+            <a href="/application/"></a>
+        </div>
+        <div class="n-header__bucket">
+            <a href="/application/basket/"></a>
+            <div class="n-header__count n-header__bucket-count"><span>1</span></div>
+        </div>
+        <div class="n-header__notice">
+            <a href="#"></a>
+            <div class="n-header__count n-header__notice-count"><span>33</span></div>
+        </div>
+        <div class="n-header__manual">
+            <a href="#"></a>
+            <div class="n-header__count n-header__manual-count"><span>1</span></div>
+        </div>
+    </div>
+    <div class="n-header__menu">
+        <div class="n-header__menu__container">
+            <ul class="n-header__menu__list">
+                <li>
+                    <a href="#"></a>
+                    <img src="./img/it1.png" alt="" />
+                    <span>Моя зарплата</span>
+                </li>
+                <li>
+                    <a href="/application/"></a>
+                    <img src="./img/it2.png" alt="" />
+                    <span>Продажи</span>
+                </li>
+                <li>
+                    <a href="/application/knowledge/"></a>
+                    <img src="./img/it4.png" alt="" />
+                    <span>Знания</span>
+                </li>
+                <li>
+                    <a href="/application/instruction/"></a>
+                    <img src="./img/it5.png" alt="" />
+                    <span>Инструкции</span>
+                </li>
+                <li>
+                    <a href="/application/forms/"></a>
+                    <img src="./img/it6.png" alt="" />
+                    <span>Обратная связь</span>
+                </li>
+                <li>
+                    <a href="#"></a>
+                    <img src="./img/it8.png" alt="" />
+                    <span>Личные сообщения</span>
+                </li>
+                <!--<li>-->
+                <!--<a href="/application/?logout=yes"></a>-->
+                <!--<img src="./img/it7.png" alt="" />-->
+                <!--<span>Выход</span>-->
+                <!--</li>-->
+            </ul>
+            <div class="n-header__menu-close"></div>
+        </div>
+    </div>
+
+    <section class="n-main">
+        <div class="n-main__bk n-main__bk--salary">
+            <div class="n-main__bk__logo">
+                <img src="img/it1.png" alt="">
+            </div>
+        </div>
+
+        <div class="n-container n-container--mod">
+            <div class="n-main-salary">
+                <div class="n-main-salary__img"><img src="./img/salary/slice36.png" alt=""></div>
+                <form action class="controls">
+                    <div class="controls__item">
+                        <div class="controls__title">Диапазон:</div>
+                        <span class="output-slider" id="output-percent"></span>
+                        <input class="range-slider" id="range-percent" type="range">
+                    </div>
+                    <div class="controls__item">
+                        <div class="controls__title">День:</div>
+                        <span class="output-slider" id="output-day"></span>
+                        <input class="range-slider" id="range-day" type="range">
+                    </div>
+                    <div class="controls__item">
+
+                        <div class="controls__title">Пол:</div>
+                        <div class="controls__radio">
+                            <label for="gender-man">Мужской</label>
+                            <input type="radio" name="gender" id="gender-man" value="man" checked>
+                        </div>
+                        <div class="controls__radio">
+                            <label for="gender-woman">Женский</label>
+                            <input type="radio" name="gender" value="woman" id="gender-woman">
+                        </div>
+
+                    </div>
+                </form>
+                <div class="n-main-salary-info">
+                    <div class="n-main-salary-info__item n-main-salary-info--blue">
+                        <div class="n-main-salary-info__title">Сумма продаж сопутствующих товаров</div>
+                        <div class="n-main-salary-info__data">26 573,55 </div>
+                        <div class="n-main-salary-info__data">13,18 %</div>
+                    </div>
+                    <div class="n-main-salary-info__item n-main-salary-info--darkred">
+                        <div class="n-main-salary-info__title">Сумма продаж доп.гарантий</div>
+                        <div class="n-main-salary-info__data">4 498,00</div>
+                        <div class="n-main-salary-info__data">2,23 %</div>
+                    </div>
+                    <div class="n-main-salary-info__item n-main-salary-info--red">
+                        <div class="n-main-salary-info__title">Сумма продаж пакетов программ</div>
+                        <div class="n-main-salary-info__data">1 000,00</div>
+                        <div class="n-main-salary-info__data">1 %</div>
+                    </div>
+                    <div class="n-main-salary-info__item n-main-salary-info--darkgreen">
+                        <div class="n-main-salary-info__title">Сумма продаж РГС</div>
+                        <div class="n-main-salary-info__data">4 498,00</div>
+                        <div class="n-main-salary-info__data">78 %</div>
+                    </div>
+                </div>
+                <div class="n-main-salary-rating">
+                    <div class="n-main-salary-rating__item">
+                        <div class="n-main-salary-rating__position">
+                            <div class="n-main-salary-rating__position-title">Рейтинг: <span>Моя позиция №2</span></div>
+                        </div>
+                        <div class="n-main-salary-rating__where">Где я?</div>
+                    </div>
+
+                    <ul class="tabs-menu">
+                        <li class="tabs-menu__item current"><a href="#rating__month">За месяц</a></li>
+                        <li class="tabs-menu__item"><a href="#rating__all-time">За все время</a></li>
+                    </ul>
+                    <div class="tab">
+                        <div id="rating__month" class="tab-content">
+                            <ul class="rating-list">
+                                <li class="rating-lis__item">
+                                    <div class="rating-card">
+                                        <div class="rating-card__header">
+                                            <div class="rating-card__avatar"><img src="./img/pic4.png" alt=""></div>
+                                            <div class="rating-card__position">№1</div>
+                                        </div>
+                                        <div class="rating-card__body">
+                                            <div class="rating-card__percent">152 %</div>
+                                            <div class="rating-card__user">
+                                                <div class="rating-card__user-surname">Зимин</div>
+                                                <div class="rating-card__user-name">Михаил <span>Н.</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="rating-lis__item">
+                                    <div class="rating-card active-user">
+                                        <div class="rating-card__header">
+                                            <div class="rating-card__avatar"><img src="./img/pic4.png" alt=""></div>
+                                            <div class="rating-card__position">№2</div>
+                                        </div>
+                                        <div class="rating-card__body">
+                                            <div class="rating-card__percent">137 %</div>
+                                            <div class="rating-card__user">
+                                                <div class="rating-card__user-surname">Зимин</div>
+                                                <div class="rating-card__user-name">Михаил Н.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="rating-lis__item">
+                                    <div class="rating-card">
+                                        <div class="rating-card__header">
+                                            <div class="rating-card__avatar"><img src="./img/pic4.png" alt=""></div>
+                                            <div class="rating-card__position">№3</div>
+                                        </div>
+                                        <div class="rating-card__body">
+                                            <div class="rating-card__percent">103 %</div>
+                                            <div class="rating-card__user">
+                                                <div class="rating-card__user-surname">Иваникова</div>
+                                                <div class="rating-card__user-name">Евгения М.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="rating-lis__item">
+                                    <div class="rating-card">
+                                        <div class="rating-card__header">
+                                            <div class="rating-card__avatar"><img src="./img/pic4.png" alt=""></div>
+                                            <div class="rating-card__position">№4</div>
+                                        </div>
+                                        <div class="rating-card__body">
+                                            <div class="rating-card__percent">100 %</div>
+                                            <div class="rating-card__user">
+                                                <div class="rating-card__user-surname">Клименко</div>
+                                                <div class="rating-card__user-name">Антон Д.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="rating-lis__item">
+                                    <div class="rating-card">
+                                        <div class="rating-card__header">
+                                            <div class="rating-card__avatar"><img src="./img/pic4.png" alt=""></div>
+                                            <div class="rating-card__position">№5</div>
+                                        </div>
+                                        <div class="rating-card__body">
+                                            <div class="rating-card__percent">100 %</div>
+                                            <div class="rating-card__user">
+                                                <div class="rating-card__user-surname">Кургаев</div>
+                                                <div class="rating-card__user-name">Эдуард В.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="rating-lis__item">
+                                    <div class="rating-card">
+                                        <div class="rating-card__header">
+                                            <div class="rating-card__avatar"><img src="./img/pic4.png" alt=""></div>
+                                            <div class="rating-card__position">№6</div>
+                                        </div>
+                                        <div class="rating-card__body">
+                                            <div class="rating-card__percent">98 %</div>
+                                            <div class="rating-card__user">
+                                                <div class="rating-card__user-surname">Смирнов</div>
+                                                <div class="rating-card__user-name">Андрей Н.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="rating-lis__item">
+                                    <div class="rating-card">
+                                        <div class="rating-card__header">
+                                            <div class="rating-card__avatar"><img src="./img/pic4.png" alt=""></div>
+                                            <div class="rating-card__position">№7</div>
+                                        </div>
+                                        <div class="rating-card__body">
+                                            <div class="rating-card__percent">82 %</div>
+                                            <div class="rating-card__user">
+                                                <div class="rating-card__user-surname">Соколов</div>
+                                                <div class="rating-card__user-name">Никита А.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="rating-scale">
+                                <div class="rating-scale_item"></div>
+                                <div class="rating-scale_item"></div>
+                                <div class="rating-scale_item"></div>
+                                <div class="rating-scale_item"></div>
+                                <div class="rating-scale_item"></div>
+                                <div class="rating-scale_item"></div>
+                                <div class="rating-scale_item"></div>
+                            </div>
+                        </div>
+                        <div id="rating__all-time" class="tab-content">
+                            <ul class="rating-list">
+                                <li class="rating-lis__item">
+                                    <div class="rating-card">
+                                        <div class="rating-card__header">
+                                            <div class="rating-card__avatar"><img src="./img/pic4.png" alt=""></div>
+                                            <div class="rating-card__position">№1</div>
+                                        </div>
+                                        <div class="rating-card__body">
+                                            <div class="rating-card__percent">189 %</div>
+                                            <div class="rating-card__user">
+                                                <div class="rating-card__user-surname">Зимин</div>
+                                                <div class="rating-card__user-name">Михаил <span>Н.</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="rating-lis__item">
+                                    <div class="rating-card">
+                                        <div class="rating-card__header">
+                                            <div class="rating-card__avatar"><img src="./img/pic4.png" alt=""></div>
+                                            <div class="rating-card__position">№2</div>
+                                        </div>
+                                        <div class="rating-card__body">
+                                            <div class="rating-card__percent">147 %</div>
+                                            <div class="rating-card__user">
+                                                <div class="rating-card__user-surname">Зимин</div>
+                                                <div class="rating-card__user-name">Михаил Н.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="rating-lis__item active-user">
+                                    <div class="rating-card">
+                                        <div class="rating-card__header">
+                                            <div class="rating-card__avatar"><img src="./img/pic4.png" alt=""></div>
+                                            <div class="rating-card__position">№3</div>
+                                        </div>
+                                        <div class="rating-card__body">
+                                            <div class="rating-card__percent">113 %</div>
+                                            <div class="rating-card__user">
+                                                <div class="rating-card__user-surname">Иваникова</div>
+                                                <div class="rating-card__user-name">Евгения М.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="rating-lis__item">
+                                    <div class="rating-card">
+                                        <div class="rating-card__header">
+                                            <div class="rating-card__avatar"><img src="./img/pic4.png" alt=""></div>
+                                            <div class="rating-card__position">№4</div>
+                                        </div>
+                                        <div class="rating-card__body">
+                                            <div class="rating-card__percent">100 %</div>
+                                            <div class="rating-card__user">
+                                                <div class="rating-card__user-surname">Клименко</div>
+                                                <div class="rating-card__user-name">Антон Д.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="rating-lis__item">
+                                    <div class="rating-card">
+                                        <div class="rating-card__header">
+                                            <div class="rating-card__avatar"><img src="./img/pic4.png" alt=""></div>
+                                            <div class="rating-card__position">№5</div>
+                                        </div>
+                                        <div class="rating-card__body">
+                                            <div class="rating-card__percent">100 %</div>
+                                            <div class="rating-card__user">
+                                                <div class="rating-card__user-surname">Кургаев</div>
+                                                <div class="rating-card__user-name">Эдуард В.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="rating-lis__item">
+                                    <div class="rating-card">
+                                        <div class="rating-card__header">
+                                            <div class="rating-card__avatar"><img src="./img/pic4.png" alt=""></div>
+                                            <div class="rating-card__position">№6</div>
+                                        </div>
+                                        <div class="rating-card__body">
+                                            <div class="rating-card__percent">98 %</div>
+                                            <div class="rating-card__user">
+                                                <div class="rating-card__user-surname">Смирнов</div>
+                                                <div class="rating-card__user-name">Андрей Н.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="rating-lis__item">
+                                    <div class="rating-card">
+                                        <div class="rating-card__header">
+                                            <div class="rating-card__avatar"><img src="./img/pic4.png" alt=""></div>
+                                            <div class="rating-card__position">№7</div>
+                                        </div>
+                                        <div class="rating-card__body">
+                                            <div class="rating-card__percent">82 %</div>
+                                            <div class="rating-card__user">
+                                                <div class="rating-card__user-surname">Соколов</div>
+                                                <div class="rating-card__user-name">Никита А.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="rating-scale">
+                                <div class="rating-scale_item"></div>
+                                <div class="rating-scale_item"></div>
+                                <div class="rating-scale_item"></div>
+                                <div class="rating-scale_item"></div>
+                                <div class="rating-scale_item"></div>
+                                <div class="rating-scale_item"></div>
+                                <div class="rating-scale_item"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>

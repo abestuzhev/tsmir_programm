@@ -1,4 +1,15 @@
 $(function(){
+
+    /*простые табы*/
+    $(".n-main-salary .tabs-menu a").click(function(event) {
+        event.preventDefault();
+        $(this).parent().addClass("current");
+        $(this).parent().siblings().removeClass("current");
+        var tab = $(this).attr("href");
+        $(".tab-content").not(tab).css("display", "none");
+        $(tab).fadeIn();
+    });
+
     /*количество товара в карточке*/
     function catalogItemCounter(field) {
         var fieldCount = function (el) {
@@ -53,16 +64,13 @@ $(function(){
         $(this).siblings('.product-card-properties__list').slideToggle(100);
     });
 
-    $('.fotorama').fotorama({
-        width: '100%',
-        // maxwidth: '100%',
-        // ratio: 17/11,
-        loop: true,
-        thumbwidth: 88,
-        allowfullscreen: true,
-        // fit:'cover',
-        nav: 'thumbs'
-    });
+    // $('.fotorama').fotorama({
+    //     width: '100%',
+    //     loop: true,
+    //     thumbwidth: 88,
+    //     allowfullscreen: true,
+    //     nav: 'thumbs'
+    // });
 
     $("#filter-price__on-search-result").ionRangeSlider({
         // min: 0,
