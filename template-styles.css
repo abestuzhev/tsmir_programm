@@ -5102,7 +5102,7 @@ new style ---------------------------------------------------
 
 .n-main-salary-info {
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     justify-content: space-between;
     align-items: flex-end;
     margin-bottom: 110px;
@@ -5514,6 +5514,15 @@ new style ---------------------------------------------------
 }
 .range-slider:active::-moz-range-thumb {
     background: orange;
+}
+
+
+
+/*делаем адаптацию под мобильные, а не только под планшет*/
+@media screen and (max-width:767px) {
+    .page {
+        min-width: auto;
+    }
 }
 
 
