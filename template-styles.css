@@ -5530,31 +5530,47 @@ new style ---------------------------------------------------
 /*страница оформления доп товаров и услуг*/
 
 .addition-products-added {
-
+    border: 1px dotted #00bd75;
+    width: 100%;
+    padding: 33px 0;
+    text-align: center;
+    margin-bottom: 140px;
 }
 
 .addition-products-added__title {
-
+    font-size: 24px;
+    color: #00bd75;
+    margin-bottom: 10px;
 }
 
 .addition-products-added__item {
-
+    font-size: 24px;
+    color: #2d2d2d;
 }
 
 .addition-products-issue {
-
+    text-align: center;
 }
 
 .addition-products-issue__title {
-
+    font-size: 50px;
+    color: #424242;
+    margin-bottom: 70px;
 }
 
 .addition-products-issue__btn-layout {
-
+    text-align: center;
+    font-size: 0;
 }
 
 .addition-products-issue__btn {
-
+    display: inline-block;
+    background-color: #00bd75;
+    border-radius: 100px;
+    padding: 34px 64px;
+    color: #ffffff;
+    font-size: 24px;
+    margin: 0 15px 15px;
 }
 
 
