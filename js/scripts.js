@@ -24,6 +24,7 @@ $(document).ready(function() {
     });
 
     showPopup(".scan-btn", '.popup-scan');
+    showPopup(".addition-btn", '.popup-addition');
 
 	
     $('input, textarea').placeholder();
