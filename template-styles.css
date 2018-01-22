@@ -1888,6 +1888,11 @@ body {
     margin-left: 18px;
     color: #323232;
 }
+
+.n-main__bucket-container {
+    padding-right: 30px;
+}
+
 .n-main__bucket-container .n-main__catalog__item {
     margin-bottom: 40px;
 }
@@ -4141,7 +4146,7 @@ new style ---------------------------------------------------
 }
 
 .additional-card__close {
-    z-index: 99;
+    z-index: 9;
     cursor: pointer;
     position: absolute;
     width: 38px;
@@ -4360,19 +4365,19 @@ new style ---------------------------------------------------
 }
 
 .js-guarantee-no {
-    width: 89px;
+    width: 13%;
 }
 
 .js-guarantee-one {
-    width: 170px;
+    width: 24%;
 }
 
 .js-guarantee-three {
-    width: 187px;
+    width: 26%;
 }
 
 .js-guarantee-forever {
-    width: 260px;
+    width: 37%;
 }
 .js-guarantee-forever .guarantee-card-status__point-circle {
     right: 55px;
@@ -4536,10 +4541,25 @@ new style ---------------------------------------------------
 }
 
 .additional-product__item:nth-child(2) {
-    width: 50%;
+    /*width: 50%;*/
 }
 .additional-product__item:nth-child(1) {
-    width: 12%;
+    /*width: 12%;*/
+}
+
+.additional-product__col {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+.additional-product__col:nth-child(2) .additional-product__item:nth-child(2) {
+    width: auto;
+}
+.additional-product__col:nth-child(1) .additional-product__item:nth-child(1) {
+    width: 80px;
 }
 
 .additional-product__name {
@@ -4710,7 +4730,7 @@ new style ---------------------------------------------------
 
 .product-card__btn {
     display: block;
-    padding: 26px 36px;
+    padding: 26px;
     font-size: 22px;
     text-align: center;
     background-color: #00bd75;
@@ -5484,7 +5504,7 @@ new style ---------------------------------------------------
 
 .controls__item {
     display: inline-block;
-    margin: 0 20px;
+    margin: 4px 20px;
 }
 
 .controls__radio {
@@ -5515,17 +5535,6 @@ new style ---------------------------------------------------
 .range-slider:active::-moz-range-thumb {
     background: orange;
 }
-
-
-
-/*делаем адаптацию под мобильные, а не только под планшет*/
-@media screen and (max-width:767px) {
-    .page {
-        min-width: auto;
-    }
-}
-
-
 
 /*страница оформления доп товаров и услуг*/
 
@@ -5582,6 +5591,876 @@ new style ---------------------------------------------------
     width: 500px;
     font-family: 'afuturaround-regular-webfont', Tahoma, sans-serif;
 }
+
+
+.n-header__user__pic {
+    width:50px;
+    height:50px;
+    overflow: hidden;
+}
+.n-header__user__pic img{
+    width:50px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+
+@media screen and (max-width:1000px) {
+    .n-main-salary-info__item {
+        width: 18%;
+    }
+
+    .n-main-salary-info {
+        margin-bottom: 40px;
+    }
+}
+@media screen and (max-width:800px) {
+    .product-card__btn {
+        font-size: 19px;
+    }
+
+    .product-card__btn img {
+        width: 28px;
+        margin: 0;
+    }
+
+    .n-main__knowledge__bttns {
+        width: 100%;
+    }
+
+    .n-main__knowledge__bttns .n-main__b-btn {
+        width: 87%;
+    }
+    .n-main__sucess__back {
+        width: 60px;
+    }
+    .n-main__knowledge__bttns a {
+        height: 60px;
+    }
+
+    .n-main__b-btn span {
+        line-height: 60px;
+        font-size: 20px;
+    }
+
+    .basket-card .c-counter__field {
+        font-size: 26px;
+        width: 40px;
+    }
+    .basket-card .c-counter__btn {
+        width: 34px;
+        height: 34px;
+    }
+
+    .basket-card__price {
+        margin-left: 10px;
+    }
+}
+
+/*делаем адаптацию под мобильные, а не только под планшет*/
+@media screen and (max-width:767px) {
+    .page {
+        min-width: auto;
+    }
+
+    .n-header {
+        min-width: auto;
+        height: 58px;
+    }
+    .n-header__user__pic {
+        margin-right: 4px;
+        width: 40px;
+        height: 40px;
+    }
+
+    .n-header__user__name {
+        font-size: 13px;
+        line-height: 1.2;
+    }
+
+    .n-header__user__pic img {
+        width: 100%;
+    }
+
+    .n-header__user {
+        width: auto;
+    }
+
+    .n-header__menu ul {
+        padding: 20px;
+        padding-top: 0;
+    }
+
+    .n-header__menu ul li {
+        padding: 22px 0px 22px 10px;
+    }
+
+    .n-header__menu ul li img {
+        margin-right: 10px;
+    }
+
+    .n-header__butter,
+    .n-header__search,
+    .n-header__bucket,
+    .n-header__manual,
+    .n-header__notice {
+        width: 12%;
+    }
+
+    .n-header__count span {
+        font-size: 13px;
+    }
+
+    .n-header__count {
+        width: 23px;
+        height: 23px;
+    }
+
+    .n-header__butter:after {
+        top: 16px;
+    }
+
+    .n-header__butter:before {
+        bottom: 16px;
+    }
+
+    .n-header__butter:after,
+    .n-header__butter:before,
+    .n-header__butter .line {
+        width: 35px;
+    }
+
+    .n-header .butter-active:before {
+        bottom: 26px;
+    }
+    .n-header .butter-active:after {
+        top: 26px;
+    }
+
+    .n-container {
+        padding: 0 14px;
+    }
+
+    .n-main__auth__field {
+        margin: 0px 20px;
+    }
+
+    .n-main__b-btn {
+        margin: 0px 20px;
+    }
+
+    .n-header__menu {
+        top: 58px;
+    }
+
+    .n-header__menu ul li {
+        font-size: 21px;
+    }
+
+    .n-header__menu ul li img {
+        width: 30px;
+    }
+
+    .n-header__menu-close {
+        width: 70px;
+        height: 70px;
+        margin: 0 auto;
+    }
+
+    .n-main__b-btn {
+        height: 70px;
+    }
+    .n-main__b-btn span {
+        line-height: 60px;
+    }
+
+    .n-header__user {
+        margin-left: 5px;
+    }
+
+    .n-main-additional__title {
+        font-size: 20px;
+    }
+
+    .n-main-additional__goods {
+        font-size: 18px;
+    }
+
+    .additional-card {
+        padding: 20px 15px;
+    }
+
+    .additional-btn {
+        margin: 4px;
+    }
+
+    .n-main {
+        padding-bottom: 0;
+    }
+
+    .additional-product {
+        flex-flow: column nowrap;
+        align-items: flex-start;
+    }
+    .additional-product__item .c-counter {
+        margin-right: 20px;
+    }
+    .additional-product__item .c-counter__field {
+        width: 40px;
+    }
+
+    .additional-product__name {
+        font-size: 24px;
+    }
+
+    .additional-product__col:nth-child(2) .additional-product__item:nth-child(1) {
+        margin-left: 80px;
+    }
+
+    .insurance-mobile::before {
+        content: '';
+        left: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .insurance-mechanical::before {
+        content: '';
+        left: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .n-main-additional__list {
+        padding: 0 10px;
+    }
+
+    .search-result-card__price {
+        white-space: nowrap;
+    }
+
+    .product-card-info__text {
+        font-size: 15px;
+        line-height: 1.3;
+    }
+
+    .product-card-properties__btn {
+        font-size: 18px;
+    }
+    .n-main-notice-card__title {
+        white-space: normal;
+    }
+
+    .n-main__actions__item__header span {
+        margin-bottom: 10px;
+    }
+
+    .n-main__actions__item__header b {
+        font-size: 20px !important;
+    }
+
+    .n-main__actions__item__text {
+        font-size: 18px !important;
+    }
+
+    .n-main__auth__field--log {
+        margin-bottom: 56px;
+    }
+
+    .n-main-btn__all-result {
+        margin: 10px 0;
+    }
+
+    .n-main__scan {
+        margin-bottom: 30px;
+    }
+
+    .n-header__basket-line::after {
+        content: '';
+        right: 5px;
+    }
+}
+
+@media screen and (max-height:580px) {
+    .n-main__knowledge__bttns {
+        position: static;
+    }
+}
+
+@media screen and (max-width:720px) {
+    .n-main-notice__date {
+        flex-flow: column nowrap;
+        align-items: flex-start;
+    }
+    .n-main-notice__date .select-layout {
+        display: block;
+        width: 100%;
+    }
+    .n-main-notice__date .n-main-notice__filter-message {
+        width: 100%;
+    }
+    .n-main-notice__date-col {
+        width: 100%;
+    }
+    .n-main-notice__date-col:nth-child(1) {
+        margin-bottom: 10px;
+    }
+
+    .n-main__bk {
+        height: 100px;
+    }
+
+    .n-main-notice-card a {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .n-main-notice-card__icon {
+        width: 40px;
+    }
+
+    .n-main-notice-card__arrow {
+        width: 40px;
+    }
+
+    .n-main-notice-card__body {
+        width: 91%;
+    }
+}
+
+@media screen and (max-width:710px) {
+    .insurance-card__btn {
+        display: block;
+        width: 100%;
+        margin-bottom: 10px;
+        padding: 22px 35px 22px 80px;
+    }
+    .search-btn--small {
+        width: 70px;
+        height: 70px;
+    }
+
+    .product-card__btn img {
+        display: none;
+    }
+
+    .product-card__img {
+        width: 300px;
+        margin-right: 0;
+    }
+
+    .product-card-info {
+        padding-left: 315px;
+    }
+
+    .n-main__knowledge__bttns .n-main__b-btn {
+        width: 77%;
+    }
+
+    .n-main-salary-info__item {
+        width: 50%;
+        box-sizing: border-box;
+        margin-bottom: 14px;
+    }
+
+    .rating-card {
+        width: 100%;
+        padding: 14px 4px 30px;
+    }
+
+    .rating-lis__item {
+        width: 14%;
+    }
+
+}
+
+@media screen and (max-width:680px) {
+    .basket-card {
+        padding: 10px 70px 10px 0;
+        flex-flow: column wrap;
+        align-items: flex-start;
+    }
+
+    .basket-card .c-btn__delete {
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 48px;
+        height: 48px;
+    }
+
+    .basket-card__right {
+        width: 100%;
+        justify-content: flex-start;
+        margin-left: 60px;
+    }
+
+    .n-main__catalog-more__bttns--mod .n-main__b-btn:first-child {
+        margin-bottom: 14px;
+        width: 100%;
+    }
+
+    .n-main__catalog-more__bttns--mod .n-main__b-btn {
+        width: 100%;
+    }
+
+    .n-main__catalog-more__bttns--mod .n-main__b-btn:first-child span {
+        line-height: 70px;
+    }
+
+    .n-main__bucket__bottom {
+        padding-top: 0;
+    }
+
+    .n-main__bucket__bottom b {
+        font-size: 50px;
+    }
+
+    .n-main__bucket__top {
+        margin: 30px 0;
+    }
+
+    .n-main__bucket-container {
+        padding: 0;
+    }
+
+    .basket-card__left {
+        width: 100%;
+    }
+
+    .n-main__catalogv2 .basket-addition-card {
+        margin-left: 25px;
+    }
+}
+
+@media screen and (max-width:650px) {
+
+    .rating-card__body {
+        left: -120px;
+    }
+}
+@media screen and (max-width:600px) {
+    .search-result-card__row {
+        flex-flow: column nowrap;
+        align-items: flex-start;
+    }
+
+    .search-result-card__left,
+    .search-result-card__right {
+        width: 100%;
+        position: relative;
+    }
+    .search-result-card__left {
+        margin-bottom: 10px;
+    }
+    .search-result-card__right {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .search-result-card__price {
+        text-align: right;
+        width: 40%;
+        order:2;
+    }
+
+    .search-result-card__info{
+        text-align: left;
+        width: 60%;
+        order:1;
+    }
+
+    .search-result-card__article,
+    .search-result-card__quantity {
+        text-align: left;
+    }
+
+    .search-result-card__article {
+        top: 0;
+    }
+
+    .product-card__img {
+        float: none;
+        width: 100%;
+    }
+
+    .product-card-info {
+        padding: 0;
+    }
+
+    .product-card__rating {
+        margin-bottom: 20px;
+    }
+
+    .product-card-property {
+        padding: 14px 0 14px 8px;
+        font-size: 15px;
+    }
+    .tabs-menu__item a {
+        font-size: 15px;
+    }
+
+    .n-main-search-result__body .irs {
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width:590px) {
+    .rating-list {
+        flex-flow: column nowrap;
+        align-items: flex-start;
+        margin-bottom: 0;
+    }
+
+    .rating-lis__item {
+        height: auto !important;
+        width: 100%;
+    }
+
+    .rating-card__header {
+        margin: 0 20px 0 0;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .rating-card__avatar {
+        order: 2;
+        margin-bottom: 0;
+    }
+    .rating-card__position {
+        order: 1;
+        margin-right: 10px;
+        min-width: 43px;
+    }
+    .rating-card__body {
+        position: static;
+        -webkit-transform: none;
+        -moz-transform: none;
+        -ms-transform: none;
+        -o-transform: none;
+        transform: none;
+        width: 100%;
+    }
+
+    .rating-card__percent {
+        width: 104px;
+    }
+
+    .rating-card {
+        width: 100%;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 14px 4px;
+    }
+
+    .rating-card__user {
+        border-right: none;
+        border-left: 1px solid #d0d0d0;
+    }
+
+    .rating-card__user-surname,
+    .rating-card__user-name {
+        padding-left: 10px;
+    }
+
+    .rating-scale {
+        display: none;
+    }
+
+    .n-main-salary .tab {
+        padding: 10px 0;
+    }
+
+    .tabs-menu__item {
+        width: 35%;
+    }
+
+    .n-main-search-result__goods {
+        display: block;
+    }
+}
+
+@media screen and (max-width:550px) {
+    .additional-btn {
+        box-sizing: border-box;
+        display: block;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .additional-btn:last-child {
+        margin-bottom: 0;
+    }
+
+    .additional-card__icon {
+        margin-right: 12px;
+    }
+    .additional-card__title {
+        font-size: 14px;
+    }
+
+    .additional-card-add {
+        margin: 10px 0px 10px 30px;
+    }
+
+    .additional-product__name {
+        font-size: 18px;
+    }
+
+    .additional-product__col:nth-child(2) .additional-product__item:nth-child(1) {
+        /*margin: 0;*/
+    }
+
+    .n-main-salary-rating__position-title span {
+        display: block;
+    }
+
+    .n-main-salary-rating__where {
+        font-size: 15px;
+    }
+
+    .popup-addition {
+        width: 100%;
+        height: 100vh;
+        border-radius: 0;
+    }
+
+    .addition-products-issue__title {
+        font-size: 18px;
+        margin-bottom: 25px;
+    }
+
+    .addition-products-issue__btn {
+        padding: 12px 35px;
+        font-size: 16px;
+    }
+
+    .addition-products-added__item {
+        font-size: 20px;
+    }
+
+    .n-main__bucket__summ,
+    .n-main__bucket__all {
+        float: none;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:460px) {
+    .n-main-salary__img img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width:420px) {
+    .n-main-notice__date-all-time {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+        margin-bottom: 10px;
+    }
+
+    .n-main-notice__date input {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:410px) {
+    .js-guarantee-no {
+        width: 18%;
+    }
+
+    .js-guarantee-one {
+        width: 26%;
+    }
+    .js-guarantee-three {
+        width: 19%;
+    }
+
+    .js-guarantee-forever {
+        width: 37%;
+    }
+
+    .js-guarantee-forever .guarantee-card-status__point-circle {
+        right: 21px;
+    }
+
+    .insurance-mobile::before {
+        content: '';
+        left: 20px;
+    }
+
+    .insurance-mechanical::before {
+        content: '';
+        left: 20px;
+    }
+    .insurance-card__btn {
+        padding: 13px 29px 17px 64px;
+        font-size: 15px;
+    }
+
+    .insurance-card {
+        padding: 20px;
+    }
+
+    .n-main__auth__field input {
+        padding-left: 57px;
+    }
+
+
+    .search-result-card__right {
+        flex-flow: column nowrap;
+        align-items: flex-start;
+    }
+
+    .search-result-card__price,
+    .search-result-card__info {
+        width: 100%;
+    }
+
+    .n-main-notice-card__title {
+        font-size: 14px;
+    }
+
+    .n-main-notice-card__date {
+        font-size: 12px;
+        margin-bottom: 3px;
+    }
+
+    .n-main-notice-card a {
+        /*display: block;*/
+    }
+
+    .n-main-notice-card__arrow {
+        width: 30px;
+        right: 11px;
+    }
+
+    .n-main-notice-card {
+        padding: 17px 45px 20px 13px;
+    }
+
+    .n-main__knowledge__bttns .n-main__b-btn {
+        width: 67%;
+    }
+
+    .tabs-menu__item {
+        width: 50% !important;
+        padding: 0 !important;
+    }
+
+    .n-main-salary-info__item {
+        width: 100%;
+    }
+
+    .basket-card .c-counter__btn {
+        width: 26px;
+        height: 26px;
+    }
+
+    .c-counter .dec::before,
+    .c-counter .inc::before {
+        content: '';
+        width: 14px;
+    }
+
+    .c-counter .inc::after {
+        content: '';
+        height: 14px;
+    }
+
+    .basket-card .c-counter__field {
+        font-size: 19px;
+        width: 29px;
+    }
+
+    .basket-card__price {
+        font-size: 20px;
+    }
+
+    .n-main__bucket__bottom span {
+        font-size: 20px;
+    }
+
+    .n-main__bucket__bottom b {
+        font-size: 41px;
+    }
+}
+
+
+
+@media screen and (max-width:360px) {
+    .n-header__butter a,
+    .n-header__search a,
+    .n-header__bucket a,
+    .n-header__manual a,
+    .n-header__notice a {
+        -webkit-background-size:58%;
+        background-size:58%;
+    }
+    .n-header__butter,
+    .n-header__search,
+    .n-header__bucket,
+    .n-header__manual,
+    .n-header__notice {
+        width: 11%;
+    }
+    .n-header__count {
+        width: 20px;
+        height: 20px;
+    }
+    .n-header__count span {
+        font-size: 11px;
+    }
+
+    .n-header__butter:after {
+        top: 19px;
+    }
+
+    .n-header__butter:before {
+        bottom: 19px;
+    }
+
+    .n-header__butter:after,
+    .n-header__butter:before,
+    .n-header__butter .line {
+        width: 26px;
+        height: 4px;
+    }
+
+    .n-header .butter-active:after {
+        top: 27px;
+    }
+
+    .additional-product .c-counter__btn {
+        width: 37px;
+        height: 37px;
+    }
+    .additional-product .c-btn__delete {
+        width: 37px;
+        height: 37px;
+    }
+    .additional-product .c-btn__delete::after {
+        content: '';
+        width: 17px;
+        height: 22px;
+        -webkit-background-size: cover;
+        background-size: cover;
+    }
+
+    .basket-card .c-btn__delete {
+        right: 5px;
+    }
+}
+
+
 
 
 
