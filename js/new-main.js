@@ -72,7 +72,34 @@ $(function(){
     //     nav: 'thumbs'
     // });
 
-    $("#filter-price__on-search-result").ionRangeSlider({
+    // код для тестирования
+    var maxValue = 23000,
+        minValue = 17000,
+        defaultValue = 20000,
+        interval = 6000;
+
+    $(document).on('change', '.custom-value-range input', function(){
+        defaultValue = Number($(this).val()); 
+        maxValue = defaultValue + (defaultValue * 0.15);
+        minValue = defaultValue - (defaultValue * 0.15);
+        interval = maxValue - minValue;
+        // console.log('defaultValue ' + defaultValue);
+        // console.log('maxValue ' + maxValue);
+        // console.log('minValue ' + minValue);
+        // console.log('interval ' + interval);
+
+        slider.update({
+            from: minValue,
+            to: maxValue,
+            max_interval: interval,
+            min_interval: interval
+        });
+
+        
+    });
+
+    
+    $('#filter-price__on-search-result').ionRangeSlider({
         // min: 0,
         // max: 90000,
         // from: 50000
@@ -80,10 +107,21 @@ $(function(){
         type: "double",
         min: 0,
         max: 90000,
-        from: 42500,
-        to: 57500,
-        keyboard: true // true by default
+        from: minValue,
+        to: maxValue,
+        keyboard: true, // true by defaultб
+        drag_interval: true,
+        max_interval: interval,
+        min_interval: interval
     });
+    
+
+    var slider = $('#filter-price__on-search-result').data("ionRangeSlider");
+    
+    
+
+
+    
 
     // Инициализация
     $('#datepicker').datepicker({
