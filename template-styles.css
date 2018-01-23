@@ -6250,6 +6250,10 @@ new style ---------------------------------------------------
         float: none;
         width: 100%;
     }
+
+    .n-main-search-result__sort {
+        text-align:  left;
+    }
 }
 
 @media screen and (max-width:460px) {
@@ -6392,6 +6396,27 @@ new style ---------------------------------------------------
     .n-main__bucket__bottom b {
         font-size: 41px;
     }
+
+
+    .additional-product .c-counter__btn {
+        width: 37px;
+        height: 37px;
+    }
+    .additional-product .c-btn__delete {
+        width: 37px;
+        height: 37px;
+    }
+    .additional-product .c-btn__delete::after {
+        content: '';
+        width: 17px;
+        height: 22px;
+        -webkit-background-size: cover;
+        background-size: cover;
+    }
+
+    .basket-card .c-btn__delete {
+        right: 5px;
+    }
 }
 
 
@@ -6439,24 +6464,21 @@ new style ---------------------------------------------------
         top: 27px;
     }
 
-    .additional-product .c-counter__btn {
-        width: 37px;
-        height: 37px;
-    }
-    .additional-product .c-btn__delete {
-        width: 37px;
-        height: 37px;
-    }
-    .additional-product .c-btn__delete::after {
-        content: '';
-        width: 17px;
-        height: 22px;
-        -webkit-background-size: cover;
-        background-size: cover;
+    .additional-product__item .c-counter__field {
+        width: 32px;
+        font-size: 21px;
     }
 
-    .basket-card .c-btn__delete {
-        right: 5px;
+    .additional-product__item .c-counter {
+        margin-right: 11px;
+    }
+
+    .insurance-card__status {
+        padding-right: 43px;
+    }
+
+    .n-main__knowledge__bttns .n-main__b-btn {
+        width: 57%;
     }
 }
 
