@@ -125,7 +125,8 @@ $(function(){
 
     // Инициализация
     $('#datepicker').datepicker({
-      range: true
+      range: true,
+      autoClose: true
     });
 
     /*клонирование карточек*/

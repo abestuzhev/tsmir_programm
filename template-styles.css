@@ -6106,6 +6106,28 @@ new style ---------------------------------------------------
     .n-main-search-result__body .irs {
         margin-bottom: 30px;
     }
+
+    .datepicker {
+        width: 250px !important;
+    }
+
+    .datepicker--cell {
+      height: 32px !important;
+    }
+
+    .datepicker--nav-title {
+        font-size: 14px;
+        padding: 0 8px !important;
+    }
+
+    .datepicker--nav {
+        margin-bottom: 0 !important;
+        padding: 4px !important;
+    }
+
+    .datepicker .datepicker--days-names {
+        font-size: 14px !important;
+    }
 }
 
 @media screen and (max-width:590px) {
