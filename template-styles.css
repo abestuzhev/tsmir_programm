@@ -6505,8 +6505,18 @@ new style ---------------------------------------------------
 }
 
 
+/*кастом */
+.custom-irs-bar {
+    position: relative;
+}
 
-
+.custom-irs-bar .irs-bar{
+    position: static;
+    width: 100px;
+    height: 20px;
+    border-radius: 50px;
+    background-color: darkgreen;
+}
 
 
 

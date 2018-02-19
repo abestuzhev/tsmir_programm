@@ -79,19 +79,27 @@ $(function(){
         interval = 6000;
 
     $(document).on('change', '.custom-value-range input', function(){
-        defaultValue = Number($(this).val()); 
-        maxValue = defaultValue + (defaultValue * 0.15);
-        minValue = defaultValue - (defaultValue * 0.15);
-        interval = maxValue - minValue;
-        // console.log('defaultValue ' + defaultValue);
-        // console.log('maxValue ' + maxValue);
-        // console.log('minValue ' + minValue);
-        // console.log('interval ' + interval);
+        defaultValue = Number($(this).val());
+
+        if(defaultValue > 15000) {
+            maxValue = defaultValue + (defaultValue * 0.15);
+            minValue = defaultValue - (defaultValue * 0.15);
+            interval = maxValue - minValue;
+        }else {
+            maxValue = defaultValue + (defaultValue * 0.5);
+            minValue = defaultValue - (defaultValue * 0.5);
+            interval = maxValue - minValue;
+        }
+
+        console.log('defaultValue ' + defaultValue);
+        console.log('maxValue ' + maxValue);
+        console.log('minValue ' + minValue);
+        console.log('interval ' + interval);
 
         slider.update({
             from: minValue,
             to: maxValue,
-            max_interval: interval,
+            // max_interval: interval,
             min_interval: interval
         });
 
@@ -109,9 +117,9 @@ $(function(){
         max: 90000,
         from: minValue,
         to: maxValue,
-        keyboard: true, // true by defaultб
+        // keyboard: true, // true by defaultб
         drag_interval: true,
-        max_interval: interval,
+        // max_interval: interval,
         min_interval: interval
     });
     
